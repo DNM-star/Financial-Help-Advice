@@ -297,8 +297,8 @@ function renderModules() {
       (module, index) => `
     <article class="module-card">
       <div><div class="module-top"><span class="module-number">${String(index + 1).padStart(2, "0")}</span>${icon(module.icon, "module-svg")}</div>
-      <h2>${module.title}</h2><p>${module.description}</p></div>
-      <div class="module-bottom"><span class="lesson-count">${module.lessons} Lessons</span><a class="module-start" href="#sample-lesson">Get Started</a></div>
+      <h2><a href="learn-guide.html#mod-${index + 1}">${module.title}</a></h2><p>${module.description}</p></div>
+      <div class="module-bottom"><span class="lesson-count">${module.lessons} Lessons</span><a class="module-start" href="learn-guide.html#mod-${index + 1}">Get Started</a></div>
     </article>`,
     )
     .join("");
