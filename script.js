@@ -347,7 +347,7 @@ function renderChecklist() {
 }
 
 function setupLessonTabs() {
-  const tabs = [...document.querySelectorAll(".lesson-tab")];
+  const tabs = [...document.querySelectorAll('.lesson-tab[role="tab"]')];
   if (!tabs.length) return;
   tabs.forEach((tab, index) => {
     tab.tabIndex = tab.getAttribute("aria-selected") === "true" ? 0 : -1;
