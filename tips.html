@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f3ed" />
+    <meta
+      name="description"
+      content="Simple, practical money habits for Kenyan teenagers."
+    />
+    <title>Practical Money Tips — Financial Literacy KE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Financial Literacy KE home"
+          ><span class="brand-mark" aria-hidden="true">FL</span
+          ><span>Financial Literacy KE</span></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="index.html" data-page="home">Home</a
+          ><a href="learn.html" data-page="learn">Learn</a
+          ><a href="play.html" data-page="play">Play</a
+          ><a href="stories.html" data-page="stories">Real-Life Stories</a
+          ><a href="tips.html" data-page="tips" aria-current="page">Tips</a
+          ><a href="about.html" data-page="about">About</a>
+        </nav>
+        <a
+          class="profile-button"
+          href="about.html"
+          aria-label="About Financial Literacy KE"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="3" />
+            <path d="M6.5 19c.4-3.1 2.3-4.8 5.5-4.8s5.1 1.7 5.5 4.8z" /></svg
+        ></a>
+      </div>
+    </header>
+    <main>
+      <section class="page-section" aria-labelledby="tips-title">
+        <div class="tips-intro layout-width">
+          <div>
+            <div class="eyebrow-row">
+              <span class="eyebrow pill">01 / Daily Habits</span
+              ><span class="small-label">Kenyan Youth Guide</span>
+            </div>
+            <h1 id="tips-title">Practical Money Tips</h1>
+            <p class="lead">
+              Simple habits you can start today—whether you have KSh 100 or KSh
+              2,000.
+            </p>
+          </div>
+          <div class="goal-card">
+            <span class="goal-icon" aria-hidden="true">6</span
+            ><span
+              ><span class="small-label">Weekly Goal</span
+              ><strong>6 Core Habits</strong></span
+            >
+          </div>
+        </div>
+        <div class="tips-grid layout-width" id="tips-grid"></div>
+        <section
+          class="checklist-card layout-width"
+          aria-labelledby="checklist-title"
+        >
+          <div class="checklist-summary">
+            <span class="eyebrow">Weekly Check-In</span>
+            <h2 id="checklist-title">Weekly Habit Checklist</h2>
+            <p>
+              Tick off the money habits you practiced this week. Small,
+              consistent steps build real confidence over time.
+            </p>
+            <div class="check-progress">
+              <span>Weekly Progress</span
+              ><strong id="checklist-counter" aria-live="polite">0 / 6</strong>
+            </div>
+            <div
+              class="progress-track progress-large"
+              role="progressbar"
+              aria-label="Weekly habits completed"
+              aria-valuemin="0"
+              aria-valuemax="6"
+              aria-valuenow="0"
+            >
+              <span id="checklist-progress"></span>
+            </div>
+            <button class="reset-button" id="reset-checklist" type="button">
+              ↻ &nbsp; Reset this week
+            </button>
+          </div>
+          <div class="checklist-items" id="checklist-items"></div>
+        </section>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="layout-width">
+        <div class="footer-top">
+          <div class="footer-about">
+            <a class="footer-brand" href="index.html">Financial Literacy KE</a>
+            <p>
+              Empowering Kenyan teenagers aged 14–17 with calm, practical
+              financial literacy—from M-Pesa habits to smart saving and
+              budgeting for the future.
+            </p>
+          </div>
+          <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a><a href="learn.html">Learn</a
+            ><a href="play.html">Play</a
+            ><a href="stories.html">Real-Life Stories</a
+            ><a href="tips.html">Tips</a><a href="about.html">About</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025 Financial Literacy KE. All rights reserved.</span
+          ><span>Financial Education for Kenyan Youth</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

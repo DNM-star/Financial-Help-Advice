@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f3ed" />
+    <meta
+      name="description"
+      content="Honest stories about how Kenyan teenagers navigate everyday money decisions."
+    />
+    <title>Real-Life Stories — Financial Literacy KE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Financial Literacy KE home"
+          ><span class="brand-mark" aria-hidden="true">FL</span
+          ><span>Financial Literacy KE</span></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="index.html" data-page="home">Home</a
+          ><a href="learn.html" data-page="learn">Learn</a
+          ><a href="play.html" data-page="play">Play</a
+          ><a href="stories.html" data-page="stories" aria-current="page"
+            >Real-Life Stories</a
+          ><a href="tips.html" data-page="tips">Tips</a
+          ><a href="about.html" data-page="about">About</a>
+        </nav>
+        <a
+          class="profile-button"
+          href="about.html"
+          aria-label="About Financial Literacy KE"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="3" />
+            <path d="M6.5 19c.4-3.1 2.3-4.8 5.5-4.8s5.1 1.7 5.5 4.8z" /></svg
+        ></a>
+      </div>
+    </header>
+    <main>
+      <section class="page-section" aria-labelledby="stories-title">
+        <div class="stories-hero layout-width">
+          <div class="stories-heading">
+            <div class="eyebrow-row">
+              <span class="eyebrow pill">Editorial Series</span
+              ><span class="small-label"
+                >Issue 04 · Kenyan Youth &amp; Money</span
+              >
+            </div>
+            <h1 id="stories-title">Real-Life Stories</h1>
+            <p class="lead">
+              How Kenyan teens navigate pocket money, peer pressure, Fuliza, and
+              first hustles.
+            </p>
+          </div>
+          <div class="stories-art">
+            <img
+              src="./assets/teen-money-story.png"
+              alt="Two Kenyan teenagers at a cafe table reviewing a notebook and phone together"
+            />
+            <div class="story-caption">
+              <span class="eyebrow">6 Field Notes</span
+              ><span
+                >Real decisions, honest trade-offs, and practical lessons from
+                teens across Kenya.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="story-filter-section layout-width">
+        <div
+          class="story-filters"
+          id="story-filters"
+          aria-label="Filter stories"
+        >
+          <button
+            class="filter-btn is-active"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All Stories</button
+          ><button
+            class="filter-btn"
+            type="button"
+            data-filter="budgeting"
+            aria-pressed="false"
+          >
+            Budgeting</button
+          ><button
+            class="filter-btn"
+            type="button"
+            data-filter="saving"
+            aria-pressed="false"
+          >
+            Saving</button
+          ><button
+            class="filter-btn"
+            type="button"
+            data-filter="peer-pressure"
+            aria-pressed="false"
+          >
+            Peer Pressure</button
+          ><button
+            class="filter-btn"
+            type="button"
+            data-filter="digital-money"
+            aria-pressed="false"
+          >
+            Digital Money</button
+          ><button
+            class="filter-btn"
+            type="button"
+            data-filter="hustle"
+            aria-pressed="false"
+          >
+            Hustle</button
+          ><button
+            class="filter-btn"
+            type="button"
+            data-filter="safety"
+            aria-pressed="false"
+          >
+            Safety
+          </button>
+        </div>
+        <span class="small-label" id="story-count" aria-live="polite"
+          >Showing 6 stories</span
+        >
+      </section>
+      <section
+        class="layout-width stories-grid"
+        id="stories-grid"
+        aria-label="Teen money stories"
+      ></section>
+      <section
+        class="scenario-panel layout-width story-scenario"
+        aria-labelledby="story-scenario-title"
+      >
+        <div class="scenario-copy">
+          <span class="eyebrow pill">Interactive Scenario</span>
+          <h2 id="story-scenario-title">What Would You Do?</h2>
+          <p>
+            You have saved <strong>KSh 9,000</strong> out of your KSh 12,000
+            phone goal. A close friend asks to borrow
+            <strong>KSh 300</strong> for airtime and snacks, promising to pay it
+            back next week.
+          </p>
+          <div class="phone-fund">
+            <span class="fund-ring">75%</span
+            ><span
+              ><strong>Phone Fund Progress</strong
+              ><small>KSh 9,000 of KSh 12,000 saved</small></span
+            >
+          </div>
+        </div>
+        <div class="scenario-choice-area">
+          <p class="eyebrow">Choose your response</p>
+          <div class="story-choices">
+            <button type="button" class="story-choice" data-story-choice="A">
+              <span>A</span>Send the KSh 300 from your phone fund immediately so
+              they don’t feel bad.</button
+            ><button type="button" class="story-choice" data-story-choice="B">
+              <span>B</span>Explain your goal is locked, and offer KSh 50 from
+              pocket money if you can.</button
+            ><button type="button" class="story-choice" data-story-choice="C">
+              <span>C</span>Ignore their message for the weekend to avoid the
+              conversation.
+            </button>
+          </div>
+          <div
+            class="scenario-outcome"
+            id="story-outcome"
+            aria-live="polite"
+            hidden
+          >
+            <h3 id="story-outcome-title"></h3>
+            <p id="story-outcome-text"></p>
+            <div class="takeaway">
+              <span class="eyebrow">Financial Takeaway</span>
+              <p id="story-outcome-takeaway"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="layout-width">
+        <div class="footer-top">
+          <div class="footer-about">
+            <a class="footer-brand" href="index.html">Financial Literacy KE</a>
+            <p>
+              Empowering Kenyan teenagers aged 14–17 with calm, practical
+              financial literacy—from M-Pesa habits to smart saving and
+              budgeting for the future.
+            </p>
+          </div>
+          <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a><a href="learn.html">Learn</a
+            ><a href="play.html">Play</a
+            ><a href="stories.html">Real-Life Stories</a
+            ><a href="tips.html">Tips</a><a href="about.html">About</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025 Financial Literacy KE. All rights reserved.</span
+          ><span>Financial Education for Kenyan Youth</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
